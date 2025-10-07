@@ -60,10 +60,10 @@ $harga=0;
 $ongkos_kirim=0;
 $diskon_status=0;
 $total_diskon=0;
-$jumlah=$_POST[jumlah];
-$kode=$_POST[kode];
-$kota_kirim=$_POST[kota_kirim];
-$status_member=$_POST[status_member];
+$jumlah=$_POST['jumlah'];
+$kode=$_POST['kode'];
+$kota_kirim=$_POST['kota_kirim'];
+$status_member=$_POST['status_member'];
 $submit = $_POST['Hitung'];
 ?>
 <?php if($submit) 
@@ -147,15 +147,15 @@ $totalbayar=$subtotal-$total_diskon+$ongkos_kirim;
   </tr>
   <tr>
     <td align="left">Harga Satuan</td>
-    <td><div align="right">Rp. <?php echo number_format($harga,0,",",".");?>;</div></td>
+    <td><div align="right">Rp. <?php echo number_format($harga,0,",",".");?></div></td>
   </tr>
   <tr>
     <td align="left">Jumlah Beli</td>
-    <td><div align="right"><?php echo number_format($jumlah,0,",",".");?>;</div></td>
+    <td><div align="right"><?php echo number_format($jumlah,0,",",".");?></div></td>
   </tr>
   <tr>
     <td align="left">Sub Total</td>
-    <td><div align="right">Rp. <?php echo number_format($subtotal,0,",",".");?>;</div></td>
+    <td><div align="right">Rp. <?php echo number_format($subtotal,0,",",".");?></div></td>
   </tr>
   
      <tr>
@@ -165,18 +165,18 @@ $totalbayar=$subtotal-$total_diskon+$ongkos_kirim;
   </tr>
   <tr>
     <td align="left">Diskon Pembelian</td>
-    <td><div align="right">Rp. <?php echo number_format($diskon,0,",",".");?>;</div></td>
+    <td><div align="right">Rp. <?php echo number_format($diskon,0,",",".");?></div></td>
   </tr>
   
 
   <tr>
   <td align="left">Diskon Status</td>
-  <td><div align="right"> Rp. <?php echo number_format($diskon_status,0,",",".");?>;</div></td>  
+  <td><div align="right"> Rp. <?php echo number_format($diskon_status,0,",",".");?></div></td>  
   </tr>
   
    <tr>
   <td align="left">Total Diskon</td>
-  <td><div align="right"> Rp. <?php echo number_format($total_diskon,0,",",".");?>;</div></td>  
+  <td><div align="right"> Rp. <?php echo number_format($total_diskon,0,",",".");?></div></td>  
   </tr>
   
     <tr>
